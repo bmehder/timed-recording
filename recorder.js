@@ -3,9 +3,8 @@ const handle = (mediaStream) => {
   const recording = [];
 
   const record = () => {
-    let seconds = document.querySelector('#seconds').value || 3;
     recorder.start();
-    setTimeout(() => recorder.stop(), seconds * 1000);
+    setTimeout(() => recorder.stop(), 3 * 1000);
   };
 
   const makeURL = (recording) => {
